@@ -12,17 +12,17 @@ class EmotesManager
 
     async getGlobalEmotes()
     {
-        this.client.logger.info('Loading global emotes');
+        // this.client.logger.info('Loading global emotes');
 
-        var response = await fetch(CommandoConstants.GLOBAL_EMOTES_URL);
-        var json = await response.json();
-        this.emotes = json;
+        // var response = await fetch(CommandoConstants.GLOBAL_EMOTES_URL);
+        // var json = await response.json();
+        // this.emotes = json;
 
-        var keys = Object.keys(this.emotes);
-        for (let index = 0; index < keys.length; index++) {
-            const e = this.emotes[keys[index]];
-            this.emotesArray.push(e);            
-        }
+        // var keys = Object.keys(this.emotes);
+        // for (let index = 0; index < keys.length; index++) {
+        //     const e = this.emotes[keys[index]];
+        //     this.emotesArray.push(e);            
+        // }
     }
 
     getRandomEmote()
